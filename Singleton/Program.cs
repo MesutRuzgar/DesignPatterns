@@ -17,6 +17,8 @@ namespace Singleton
         class CustomerManager
         {
             static CustomerManager _customerManager;
+            static object _lockObject = new object();
+
             private CustomerManager()
             {
                     
@@ -32,7 +34,17 @@ namespace Singleton
                 //return _customerManager;
 
                 //daha pratik bir yöntem
-                return _customerManager ?? (_customerManager = new CustomerManager());
+                // return _customerManager ?? (_customerManager = new CustomerManager());
+
+                //customer eklenirken sistemi kitliyoruz ki aynısından 2 adet oluşmasın
+                lock (_lockObject)
+                {
+                    if (_customerManager==null)
+                    {
+                        _customerManager = new CustomerManager();
+                    }
+                }
+                return _customerManager;
             }
             public  void Save()
             {

@@ -10,6 +10,7 @@ namespace ChainOfResponsibility
     {
         //bu desing patterns in amacı örneğin bir harcama var ve buna bir limit
         //koyup o koyduğumuz limite göre imzası gereken yetkilileri atıyoruz
+        //aynı durum evrak imza takip sistemininde de geçerli
         static void Main(string[] args)
         {
             Manager manager = new Manager();

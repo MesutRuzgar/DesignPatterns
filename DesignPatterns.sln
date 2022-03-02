@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator", "Decorator\Deco
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge", "Bridge\Bridge.csproj", "{254CD1BA-2E38-4657-8379-3022C6CE16C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy", "Strategy\Strategy.csproj", "{98EADDD4-92E6-4977-BBC2-B3AEC7C7D901}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{254CD1BA-2E38-4657-8379-3022C6CE16C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{254CD1BA-2E38-4657-8379-3022C6CE16C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{254CD1BA-2E38-4657-8379-3022C6CE16C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98EADDD4-92E6-4977-BBC2-B3AEC7C7D901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98EADDD4-92E6-4977-BBC2-B3AEC7C7D901}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98EADDD4-92E6-4977-BBC2-B3AEC7C7D901}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98EADDD4-92E6-4977-BBC2-B3AEC7C7D901}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
